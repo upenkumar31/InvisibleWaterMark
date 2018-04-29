@@ -1,0 +1,32 @@
+import javax.swing.*;
+import java.awt.*;
+import java.awt.event.*;
+import java.io.File;
+
+class test
+{
+	
+private JFrame j;
+private JMenu jmenu;
+private JMenuBar jbar;
+private JMenuItem jmi, jexit;
+private JPanel jpanel, jpanelbar;
+private JButton jpre, jnext;
+JLabel image;
+ImageIcon ic;
+Image img;
+
+	test()
+	{
+		j = new JFrame("VISIBLE INVISIBLE WATERMARK DETECTER");
+        	j.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+	}
+
+public static void main(String s[]) {
+    SwingUtilities.invokeLater(new Runnable() {
+        public void run() {
+            new test();
+        }
+    });
+}
+}
